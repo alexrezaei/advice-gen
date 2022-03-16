@@ -1,0 +1,75 @@
+@import "../partials/variables";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+.container {
+    padding: 0 24px;
+    background-color: getColour(dark-grayish-blue);
+    height: auto;
+    width: 343px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 775px) {
+        width: 540px;
+        padding: 0 48px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .number {
+            font-size: 1.1rem;
+            margin-top: 40px;
+            color: getColour(neon-green);
+            font-family: "Manrope", sans-serif;
+            letter-spacing: 0.4rem;
+            @media (min-width: 775px) {
+                font-size: 1.3rem;
+            }
+        }
+        .advice {
+            font-size: 2.8rem;
+            margin-top: 24px;
+            color: getColour(light-cyan);
+            font-family: "Manrope", sans-serif;
+            @media (min-width: 775px) {
+                font-size: 2.8rem;
+            }
+        }
+    }
+    .underscore {
+        margin-top: 24px;
+        margin-bottom: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (min-width: 775px) {
+            margin-top: 48px;
+            justify-content: center;
+        }
+        .line {
+            width: 122px;
+            background-color: getColour(grayish-blue);
+            height: 1px;
+            @media (min-width: 775px) {
+                margin-right: 1.6rem;
+                &:last-child {
+                    margin-right: 0;
+                    margin-left: 1.6rem;
+                }
+            }
+        }
+        .dot-container {
+            display: flex;
+            .dot {
+                height: 16px;
+                width: 6px;
+                background-color: getColour(light-cyan);
+                border-radius: 3px;
+                &:last-child {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

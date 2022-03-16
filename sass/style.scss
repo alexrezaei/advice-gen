@@ -1,0 +1,17 @@
+@import "partials/variables";
+@import "components/container";
+@import "components/button";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body {
+    margin-top: 30vh;
+    background: getColour(dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

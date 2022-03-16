@@ -1,0 +1,26 @@
+@import "../partials/variables";
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: getColour(neon-green);
+    width: 64px;
+    height: 64px;
+    margin-top: -34px;
+    border: none 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    i {
+        font-size: 2.5rem;
+        color: getColour(dark-blue);
+    }
+    &:hover {
+        transition: 0.4s;
+        filter: drop-shadow(0 0 0.7rem getColour(neon-green));
+        i {
+            transition: 0.4s;
+            font-size: 2.8rem;
+        }
+    }
+}
